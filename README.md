@@ -4,7 +4,7 @@
 
 安装  node 和 npm
 
-Node.js 版本 > 4 , npm 版本 > 4 , 查看版本。
+Node.js 版本 > 4 , npm 版本 > 3 , 查看版本。
 
 ```javascript
 node -v
