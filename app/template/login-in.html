@@ -1,9 +1,0 @@
-<div class="mt50">
-    <form [ngFormModel]="loginForm" (submit)="doLogin($event)">
-        <input ngControl="email" type="email" placeholder="Your email">
-        <input ngControl="password" type="password" placeholder="Your password">
-        <input type="submit" value="Log in">
-        <input type="button" value="返回" onclick="javascript:history.go(-1);">
-    </form>
-    <div class="mt20">{{userInfo}}</div>
-</div>
