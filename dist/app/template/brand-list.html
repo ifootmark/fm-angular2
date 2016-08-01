@@ -1,0 +1,26 @@
+<div class="ift-tbl mt10 v-brand-list" style="display: none;">
+    <div class="mt50 mb10">
+        <a href="javascript:void(0);" class="v-clear">清空数据</a>
+    </div>
+    <table cellspacing="0" cellpadding="0">
+        <thead>
+            <tr>
+                <th>品牌名称</th>
+                <th>品牌编码</th>
+                <th>备注</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let brand of Brands">
+                <td>{{brand.brandName}}</td>
+                <td>{{brand.brandCode}}</td>
+                <td>{{brand.remark}}</td>
+                <td class="text-center">
+                    <a [routerLink]="['/detail', brand.brandName]"  routerLinkActive="active">明细</a>
+                    <a href="javascript:void(0);" (click)="onDelete($event,brand)">删除</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
