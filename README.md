@@ -24,7 +24,6 @@ npm -v
 
 `npm run lite`
 
-*若运行错误，请执行  `npm install -g lite-server`*
 
 ## 打包
 `npm run build`
